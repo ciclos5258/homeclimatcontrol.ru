@@ -1,7 +1,7 @@
 async function loadDataAndDrawChart() {
     try {
         // 1. Запрашиваем данные с сервера
-        const response = await fetch('http://localhost:5002/api/data');
+        const response = await fetch('/api/data');
         if (!response.ok) {
             throw new Error('Ошибка загрузки данных');
         }
