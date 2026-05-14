@@ -1,3 +1,5 @@
+[eng Английская версия](readme.md)
+
 ```markdown
 # 🌡️ Climat Monitor — IoT-система мониторинга климата
 
@@ -12,7 +14,6 @@
 
 ## 📁 Структура проекта
 
-```
 homeclimatcontrol.ru/
 ├── backend/
 │   ├── server.py
@@ -21,7 +22,6 @@ homeclimatcontrol.ru/
     ├── index.html
     ├── style.css
     └── chart.js
-```
 
 ## 🚀 Возможности
 
@@ -36,7 +36,6 @@ homeclimatcontrol.ru/
 
 ## 🔧 Архитектура
 
-```
 ESP32 + DHT22
      │
      ▼ (MQTT, топик esp32/sensors)
@@ -53,7 +52,6 @@ ESP32 + DHT22
                       ▼
                Веб-интерфейс
             (homeclimatcontrol.ru)
-```
 
 ## 📡 API
 
@@ -76,9 +74,10 @@ ESP32 + DHT22
 - Flask работает на localhost (недоступен извне напрямую)
 - Nginx выступает HTTPS-прокси с сертификатом Let's Encrypt
 - CORS настроен только для разрешённых источников
-```
 
 👨‍💻 Автор
 [github](https://github.com/ciclos5258)
 [mail](ciclos52582@gmail.com)
 [telegram](https://t.me/rendich76)
+
+```
