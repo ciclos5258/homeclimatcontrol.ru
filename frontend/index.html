@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Climat Monitor</title>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>📊 Climat Monitor 📊</h1>
+        <div class="device-info" id="device">device: --</div>
+        <div class="status" id="status">🔄 Connecting...</div>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-title">Temperature</div>
+                <div>
+                    <span class="card-value" id="temp">--</span>
+                    <span class="card-unit">°C</span>
+                </div>
+                <div class="timestamp" id="temp-time"></div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Humidity</div>
+                <div>
+                    <span class="card-value" id="hum">--</span>
+                    <span class="card-unit">%</span>
+                </div>
+                <div class="timestamp" id="hum-time"></div>
+            </div>
+        </div>
+        
+        <!-- График температуры -->
+        <div class="chart-container">
+            <h3>📈 Temperature History</h3>
+            <canvas id="tempChart"></canvas>
+            <canvas id="tempChartTwo"></canvas>
+        </div>
+        
+        <div class="raw-data" id="raw">
+            Waiting for data...
+        </div>
+    </div>
+    <footer class="footer">
+            contact with the owner
+            ciclos52582@gmail.com
+            or Telegram
+            @rendich76
+    </footer>
+
+    <script src="chart.js"></script>
+</body>
+</html>
